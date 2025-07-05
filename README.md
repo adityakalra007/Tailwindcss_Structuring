@@ -1,12 +1,47 @@
-# React + Vite
+# Tailwind Css + React 
+# Basic Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple yet useful starter for learning both React in terms of components and styling in terms of Tailwindcss
+---
 
-Currently, two official plugins are available:
+## Demo / Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<!-- Add a screenshot, video, or link to live demo -->
+![Demo Screenshot](./image.png)  
+![Demo Screenshot](./image2.png)  
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+## Tech Stack
+
+React
+tailwindcss
+---
+
+### Installation of Vite and Tailwindcss
+
+# Create React App
+npm create vite@latest (Your Project Name)
+cd (Your Project Name)
+npm install
+
+# Installation of Tailwindcss
+ npm install tailwindcss @tailwindcss/vite
+
+# Changes Needed for Installation of Tailwindcss in React app
+ Go to vite.config.js
+ import tailwindcss from "@tailwindcss/vite"
+
+# Final Importing
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from "@tailwindcss/vite"
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(),tailwindcss()],
+})
+
+Now Go to index.css and @import "tailwindcss";
+
+You will get the things work out. If you are still having problem with this method Reach Me at my instagram - __adityakalra
